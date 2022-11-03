@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.4.0-SNAPSHOT">
+  <zoom_level>3</zoom_level>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>213</x>
+      <y>144</y>
+      <w>183</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>*Document*
+-.
+Project: Evelyn (lighweight java ORM lib)
+Title: Class Diagram
+/(Please refer to class_diagram_release_note.md file for version history)/
+-
+Top package: wasys::lib::evelyn
+-
+Repo:
+https://github.com/911992/evelyn
+Author(s):
+911992
+
+-
+*Meta Legends*
+-.
+valign=top
+halign=left
+layer=-100
+bg=light_gray
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>213</x>
+      <y>297</y>
+      <w>183</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*Authors*
+-
+911992[principal]
+https://github.com/911992
+-.
+
+valign=top
+halign=left
+layer=-100
+bg=light_gray
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>219</x>
+      <y>216</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>*X*
+lw=2
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>237</x>
+      <y>216</y>
+      <w>63</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>On-page reference
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>219</x>
+      <y>234</y>
+      <w>36</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=#eeeeff
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>261</x>
+      <y>234</y>
+      <w>63</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Note
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>654</x>
+      <y>612</y>
+      <w>144</w>
+      <h>111</h>
+    </coordinates>
+    <panel_attributes>exception
+--
+bg=#ffffaa
+layer=-257</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>426</x>
+      <y>354</y>
+      <w>585</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>api
+--
+bg=#62ff00
+layer=-257
+transparency=77</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>468</x>
+      <y>612</y>
+      <w>144</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>api::annotation
+--
+bg=#ffeeaa
+layer=-127
+transparency=37</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>477</x>
+      <y>633</y>
+      <w>126</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;@interface&gt;&gt;
+No_Set_Null_Object
+--
+--
+
+bg=#ffdd99
+transparency=0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>477</x>
+      <y>675</y>
+      <w>126</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;@interface&gt;&gt;
+Array_Type
+--
+--
++array_sql_type(void):String
+bg=#ffdd99
+transparency=0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>663</x>
+      <y>633</y>
+      <w>126</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>Stop_Result_Reader_Exception
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>663</x>
+      <y>657</y>
+      <w>126</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>No_Such_POJO_Field_Exception
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>663</x>
+      <y>681</y>
+      <w>126</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>Bad_VARG_Index_Exception
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>147</y>
+      <w>543</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>Evelyn_Core
+--
+_-THE_VOID_TYPE_SIG:Type_Signature&lt;Object&gt;:=Type_Parser.parse_no_filter(Object.class, Type_Signature_Parse_Policy.DEFAULT_POLICY) {final}_
+_+DEFAULT_TYPE_SIG_POLICY:Type_Signature_Parse_Policy {final}_
+//_-DEFAULT_STATEMENT_PLACEHOLDER_SETTER:Generic_Statement_Placeholder_Setter&lt;Object&gt; {final}_
+_-WORKING_DB_FACTORY:Object_Factory&lt;Connection&gt;_
+_+ESCAPE_CHAR:char:='\'_
+_+POJO_FIELD_MARKER:char:='&amp;'_
+_+VARG_MARKER:char:='$'_
+_-SQL_RESULT_FACTORY:Object_Factory&lt;SQL_Result&lt;Object&gt; &gt; := null_
+//_-ARRAYLIST_FACTORY:Object_Factory&lt;ArrayList&lt;Object&gt; &gt; := null_
+//_+DEFAULT_TYPE_FILTER_INDEXED_ENTITY:Generic_Filter&lt;Field_Filter_Entity&gt; {final}_
+//_-PG_TYPES:String[][] {final}_
+--
+-Evelyn_SQL_Core(void):Evelyn_SQL_Core
+_+set_working_db_factory(:Object_Factory&lt;Connection&gt;):void_
+_+set_sql_result_factory(:Object_Factory&lt;SQL_Result&lt;Object&gt; &gt;):void_
+//_+set_arraylist_factory(:Object_Factory&lt;ArrayList&lt;Object&gt; &gt;):void_
+_-field_name_idx(arg_field_name:String,:ArrayList&lt;Type_Field_Signature&gt;)_
+_-has_column(:String,:Object[]):bool_
+_-get_result_field_names(:ResultSetMetaData):Object[]_
+_-new_sql_res_instancesplit_literal_record(:Type_Signature&lt;C&gt;,arg_init_list:bool):SQL_Result&lt;C&gt;_
+_-get_special_object(:Object,:Type_Field_Signature,:Connection):Object_
+_+compile_cmd(arg_cmd:String,arg_pojo_class:Class&lt;E&gt;:=null):SQL_Command&lt;E&gt;_
+_+compile_cmd_assert(arg_cmd:String,arg_pojo_class:Class&lt;E&gt;:=null):SQL_Command&lt;E&gt;_
+_+compile_cmd(arg_cmd:String,arg_pojo_sig:Type_Signature&lt;E&gt;):SQL_Command&lt;E&gt;_
+_+read_query(arg_cmd:SQL_Command&lt;E&gt;,arg_pojo_input:E=null,arg_out_sig:Type_Signature&lt;C&gt;,SQL_Result_Reader&lt;C&gt;,:DB_Conn_Factory:=null):void_
+_+read_query_rs(arg_cmd:SQL_Command&lt;E&gt;,arg_pojo_input:E=null,Raw_SQL_Result_Reader&lt;C&gt;,:DB_Conn_Factory:=null):void_
+_+run_query(arg_cmd:SQL_Command&lt;E&gt;,arg_pojo_input:E=null,arg_out_sig:Type_Signature&lt;C&gt;,:DB_Conn_Factory:=null):SQL_Result&lt;C&gt;_
+_+run_query_varg(arg_cmd:SQL_Command&lt;E&gt;,arg_pojo_input:E=null,arg_out_sig:Type_Signature&lt;C&gt;,:SQL_Result_Reader&lt;C&gt;,:Object_Factory&lt;Connection&gt;:=null,VARG...Object):SQL_Result&lt;C&gt;_
+_-col_index(:Type_Field_Signature,:Object[]):int_
+//_+fill_obj_indexing(:Type_Signature&lt;A&gt;,:ResultSet,:A:=null):A_
+//_+fill_list_from_resultset(:ResultSet,:int:=1,:List):void_
+//_-get_sql_type(:String):String_
+_-get_array_for_ls(:Class,:List,:Connection):Array_
+//_-get_array_for_arr(:Class,:Object,:Connection):Array_
+//_+split_literal_record(:String):List&lt;String&gt;_
+//_+split_literal_record(:String,:List&lt;String&gt;):void_
+bg=yellow
+transparency=0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>432</x>
+      <y>636</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//api.annotation package
+*0A*
+lw=2
+transparency=0
+bg=yellow
+fg=#336600</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>639</y>
+      <w>33</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=2</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>486</x>
+      <y>327</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//api.annotation package
+*0A*
+lw=2
+transparency=0
+bg=yellow
+fg=#336600</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>489</x>
+      <y>291</y>
+      <w>9</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>618</x>
+      <y>630</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//exception package
+*0B*
+lw=2
+transparency=0
+bg=orange
+fg=#131377</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>627</x>
+      <y>633</y>
+      <w>33</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=2</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>513</x>
+      <y>327</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//exception package
+*0B*
+lw=2
+transparency=0
+bg=orange
+fg=#131377</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>516</x>
+      <y>291</y>
+      <w>9</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>822</x>
+      <y>612</y>
+      <w>189</w>
+      <h>111</h>
+    </coordinates>
+    <panel_attributes>impl
+--
+bg=#00ddff
+layer=-257
+transparency=77</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>828</x>
+      <y>690</y>
+      <w>81</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Holder_Map
+--
++as_varg:bool
++index:int
+//+holder_setter:Statement_Placeholder_Setter
+bg=#00ddff
+transparency=0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>936</x>
+      <y>696</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//Holder_Map
+*0C*
+lw=2
+transparency=0
+bg=magenta
+fg=#136613</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>906</x>
+      <y>699</y>
+      <w>36</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=2</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>540</x>
+      <y>327</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//Holder_Map
+*0C*
+lw=2
+transparency=0
+bg=magenta
+fg=#136613</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>543</x>
+      <y>291</y>
+      <w>9</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>666</x>
+      <y>795</y>
+      <w>48</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=2</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>474</x>
+      <y>780</y>
+      <w>195</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+WAsys_Java_type_util
+bg=#d900ff
+layer=-199
+//halign=left
+//valign=bottom</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>474</x>
+      <y>828</y>
+      <w>198</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>repo: https://github.com/911992/WAsys_Java_type_util
+bg=#eeeeff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>495</x>
+      <y>816</y>
+      <w>9</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>708</x>
+      <y>792</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//Generic_Filter
+*0E*
+lw=2
+transparency=0
+bg=#baff10
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>567</x>
+      <y>327</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//Generic_Filter
+*0E*
+lw=2
+transparency=0
+bg=#baff10
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>291</y>
+      <w>9</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>435</x>
+      <y>540</y>
+      <w>153</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>template=A:OBJECT
+SQL_Result
+--
+//only for update-delete-insert
++manipulated_rows:int
+//nullable result rows contains each instance for each row
++result_rows:ArrayList&lt;A&gt;
+--
++has_query_result(void):bool
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>495</x>
+      <y>519</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//SQL_Result
+*0F*
+lw=2
+transparency=0
+bg=#ffcc80
+fg=#0080ff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>498</x>
+      <y>528</y>
+      <w>9</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=2</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>597</x>
+      <y>327</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//SQL_Result
+*0F*
+lw=2
+transparency=0
+bg=#ffcc80
+fg=#0080ff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>291</y>
+      <w>9</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>588</x>
+      <y>750</y>
+      <w>198</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>Dependency to WAsys_Java_type_util (vary types)
+bg=#eeeeff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>684</x>
+      <y>762</y>
+      <w>9</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>846</x>
+      <y>495</y>
+      <w>153</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>template=A:OBJECT
+&lt;&lt;interface&gt;&gt;
+Raw_SQL_Result_Reader
+--
+--
+//if return true(by default), means client asks for the ResultSet rather manipulated rows
++need_raw_resultset(void):bool
+//called once, passes the generated resultset to the client
++query_result_set(:ResultSet):void
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>903</x>
+      <y>444</y>
+      <w>9</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>846</x>
+      <y>402</y>
+      <w>153</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>template=A:OBJECT
+&lt;&lt;interface&gt;&gt;
+SQL_Result_Reader
+--
+--
++command_started(void):void
++update_row_count(:int):void
++row_result(:A,:ResultSet):void
++row_result(:A):void
++command_finished(void):void
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>933</x>
+      <y>468</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//SQL_Result_Reader
+*0G*
+lw=2
+transparency=0
+bg=#a45a12
+fg=#fffeea</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>936</x>
+      <y>444</y>
+      <w>9</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=2</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>870</x>
+      <y>468</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//Raw_SQL_Result_Reader
+*0H*
+lw=2
+transparency=0
+fg=cyan
+bg=#408080</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>873</x>
+      <y>477</y>
+      <w>9</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=2</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>624</x>
+      <y>327</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//Raw_SQL_Result_Reader
+*0H*
+lw=2
+transparency=0
+fg=cyan
+bg=#408080</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>651</x>
+      <y>327</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//SQL_Result_Reader
+*0G*
+lw=2
+transparency=0
+bg=#a45a12
+fg=#fffeea</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>627</x>
+      <y>291</y>
+      <w>9</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>654</x>
+      <y>291</y>
+      <w>9</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>459</x>
+      <y>405</y>
+      <w>360</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>template=A:Object
+SQL_Command
+{immutable}
+--
+-parsed_cmd:String
+-pojo_typ_sig:Type_Signature&lt;A&gt;
+-essential_varg_length:int := 0
+-pojo_could_be_null:bool
+-holder_mapping:Holder_Map[]
+//-def_vals:Map&lt;String,Object&gt; // no default values
+-
++run_query(arg_pojo_input:A:=null,arg_out_sig:Type_Signature&lt;C&gt;,VARG...Object):SQL_Result&lt;C&gt;
++read_query(arg_pojo_input:A=null,arg_out_sig:Type_Signature&lt;C&gt;:=null,:SQL_Result_Reader&lt;C&gt;,VARG...Object):void
++read_query_rs(arg_pojo_input:A=null,:SQL_Result_Reader&lt;C&gt;,VARG...Object):void
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>435</x>
+      <y>162</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//Evelyn_Core
+*0J*
+lw=2
+transparency=0
+fg=#153077
+bg=#Fe4311</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>444</x>
+      <y>165</y>
+      <w>30</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=2</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>741</x>
+      <y>492</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//Evelyn_Core
+*0J*
+lw=2
+transparency=0
+fg=#153077
+bg=#Fe4311</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>744</x>
+      <y>465</y>
+      <w>9</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>465</y>
+      <w>9</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>717</x>
+      <y>492</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//Generic_Filter
+*0E*
+lw=2
+transparency=0
+bg=#baff10
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>693</x>
+      <y>492</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//Holder_Map
+*0C*
+lw=2
+transparency=0
+bg=magenta
+fg=#136613</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>465</y>
+      <w>9</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>669</x>
+      <y>492</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//SQL_Result_Reader
+*0G*
+lw=2
+transparency=0
+bg=#a45a12
+fg=#fffeea</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>465</y>
+      <w>9</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>954</x>
+      <y>468</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//exception package
+*0B*
+lw=2
+transparency=0
+bg=orange
+fg=#131377</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>957</x>
+      <y>444</y>
+      <w>9</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>612</x>
+      <y>558</y>
+      <w>198</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Pre_SQL_Call_Listener
+--
+--
++pre_before_sql_call(:Connection,:PreparedStatement):void
++pre_before_preparing(:Connection,:PreparedStatement):void
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>696</x>
+      <y>531</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//Pre_SQL_Call_Listener
+*0K*
+lw=2
+transparency=0
+bg=#44cc80
+fg=#ff6600</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>699</x>
+      <y>540</y>
+      <w>9</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=2</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>678</x>
+      <y>327</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//Pre_SQL_Call_Listener
+*0K*
+lw=2
+transparency=0
+bg=#44cc80
+fg=#ff6600</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>681</x>
+      <y>291</y>
+      <w>9</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>828</x>
+      <y>654</y>
+      <w>96</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>SQL_Type_Field_Filter
+--
+//_-SUPPORTED_TYPES:Class[] {final}_ 
+--
+bg=#00ddff
+transparency=0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>957</x>
+      <y>660</y>
+      <w>12</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>//Generic_Filter
+*0E*
+lw=2
+transparency=0
+bg=#baff10
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>921</x>
+      <y>660</y>
+      <w>42</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>867</x>
+      <y>624</y>
+      <w>135</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Considering any kind of field as supported, where [set/get]Object does the job by the jdbc driver
+style=wordwrap
+bg=#eeeeee</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>843</x>
+      <y>633</y>
+      <w>30</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>438</x>
+      <y>483</y>
+      <w>171</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>*manipulated_rows*
+count of affected rows, only for non-query commands like update,delete,insert
+style=wordwrap
+bg=#eeeeee</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>468</x>
+      <y>504</y>
+      <w>9</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>594</x>
+      <y>366</y>
+      <w>171</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Holds the evelyn generated script, ready for runnig by driver
+Param A to just make sure user provide related/correct script instance and related POJO as input
+style=wordwrap
+bg=#eeeeee</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>393</y>
+      <w>9</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>426</x>
+      <y>738</y>
+      <w>594</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=.
+lw=2
+fg=LIGHT_GRAY</panel_attributes>
+    <additional_attributes>10.0;10.0;1960.0;10.0</additional_attributes>
+  </element>
+</diagram>
